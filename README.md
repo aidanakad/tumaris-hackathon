@@ -1,5 +1,5 @@
 # GreenDrive Web Application
 
-#Tumaris Hackathon
+Tumaris Hackathon
 
-#She Speaks Power Team
+She Speaks Power Team
