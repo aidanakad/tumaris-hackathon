@@ -3,8 +3,10 @@ import {Container, Navbar, Nav} from 'react-bootstrap';
 import './style.scss'
 import logo from '../../assets/logo.png'
 import {NavLink} from "react-router-dom";
+import {useNavigate} from "react-router";
 
 function Menu() {
+    const navigate = useNavigate()
     const navItems = [
         { id: 0, to: '/', text: 'О нас' },
         { id: 1, to: '/application', text: 'Подать заявку' },
@@ -14,8 +16,8 @@ function Menu() {
         <div >
             <Navbar bg="light" expand="lg" fixed="top" className='shadow-lg p-3 bg-white rounded d-flex justify-content-around'>
                 <Container className=''>
-                    <Navbar.Brand href="#home">
-                        <img src={logo} className='nav-logo'/>
+                    <Navbar.Brand onClick={()=>navigate('/')}>
+                        <img src={logo} className='nav-logo'  style={{height: '40px', width:'auto'}}/>
                     </Navbar.Brand>
                     <Navbar.Toggle aria-controls="basic-navbar-nav" />
                     <Navbar.Collapse id="basic-navbar-nav" className='d-flex justify-content-between'>
