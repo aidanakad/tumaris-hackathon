@@ -1,7 +1,7 @@
 import React from 'react';
 import {Container, Navbar, Nav} from 'react-bootstrap';
 import './style.scss'
-// import logo from '../../assets/logo_patent.png'
+import logo from '../../assets/logo.png'
 import {NavLink} from "react-router-dom";
 
 function Menu() {
@@ -15,7 +15,7 @@ function Menu() {
             <Navbar bg="light" expand="lg" fixed="top" className='shadow-lg p-3 bg-white rounded d-flex justify-content-around'>
                 <Container className=''>
                     <Navbar.Brand href="#home">
-                        {/*<img src={logo} className='nav-logo'/>*/}
+                        <img src={logo} className='nav-logo'/>
                     </Navbar.Brand>
                     <Navbar.Toggle aria-controls="basic-navbar-nav" />
                     <Navbar.Collapse id="basic-navbar-nav" className='d-flex justify-content-between'>
